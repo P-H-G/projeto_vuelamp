@@ -1,0 +1,118 @@
+@media screen and (max-width: 900px) {
+    .menu-desktop {
+        width: 100%;
+        display: flex;
+    }
+    .menu-desktop .l {
+        width: calc(100% / 2);
+    }
+    .menu-desktop ul {
+        width: 0;
+        overflow: hidden;
+        height: 100%;
+        transition: 1s;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: black;
+        z-index: 11111;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu-desktop ul h2 {
+        display: block;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+    .menu-desktop li {
+        padding: 15px 0;
+        font-size: 18px;
+    }
+    .menu-desktop li a {
+        color: white;
+        text-decoration: none;
+    }
+    .menu-desktop li .ativa {
+        color: #23ddac;
+    }
+    .menu-desktop .btn_inte {
+        display: flex;
+        z-index: 9;
+        justify-content: end;
+        width: 100%;
+        text-align: end;
+    }
+    nav .menu-img {
+        width: 25px;
+        display: none;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    nav .menu-img {
+        width: 25px;
+        display: block;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    .lamp-container {
+        position: absolute;
+        top: -7%;
+        left: 45%;
+        width: 200px;
+    }
+    .lamp {
+        width: 50%;
+    }
+    .light {
+        width: 350px;
+        left: 28%;
+    }
+    .text-container {
+        max-width: 100%;
+        width: 100%;
+        margin-top: 25%;
+        margin-left: 0;
+        text-align: center;
+    }
+    .text-container h1 {
+        font-size: 50px;
+        font-weight: 400;
+    }
+    .control {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .lamp-container {
+        position: absolute;
+        top: -1%;
+        left: 40%;
+        width: 150px;
+    }
+    .lamp {
+        width: 40%;
+    }
+    .light {
+        width: 250px;
+        left: 23%;
+    }
+    button {
+        height: 20px;
+        width: 40px;
+    }
+    button span {
+        display: block;
+        background: #999;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        margin-left: 0.5px;
+        transition: background 0.5s, margin-left 0.5s;
+    }
+    nav .logo {
+        width: 130px;
+    }
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <!--titulo do site-->
+    <title>primeiro projeto</title>
+
+    <!--meta tags dos site-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="PauloH">
+    <meta mame="description" content="conteudo do projeto">
+    <meta name="keywords" content="primeito projeto">
+
+    <!--linkes do site-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="effects.css">
+    <link rel="shortcut icon" href="https://pngimg.com/uploads/deadpool/deadpool_PNG3.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap" rel="stylesheet">
+
+    <!--ecripts externo do site-->
+    <script src="https://kit.fontawesome.com/96c7bd056c.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <!--titulo-->
+    <div class="hero">
+        <nav class="menu-desktop">
+
+            <img src="images/menu.png" class="menu-img">
+            <img src="images/logo.png" class="logo">
+            <ul>
+
+                <h2 class="fecha">X</h2>
+
+                <li><a href="" class="ativa">latest</a></li>
+                <li><a href="">modern</a></li>
+                <li><a href="">Contemporary</a></li>
+                <li><a href="">affordable</a></li>
+            </ul>
+            <div class="btn_inte">
+                <button type="button" id="btn"><span></span></button>
+            </div>
+        </nav>
+
+        <div class="lamp-container">
+            <img src="images/lamp.png" class="lamp">
+            <img src="images/light.png" class="light">
+        </div>
+
+        <div class="text-container">
+            <h1>Latest in lighting</h1>
+            <p>This is nthe first lamp from our company. we're making a huge collection of modern lamps in all categories from home use to office use.</p>
+            <a href="">Check all Collections</a>
+            <div class="control">
+                <p>04</p>
+                <div class="line"><span></span></div>
+                <p>05</p>
+            </div>
+        </div>
+    </div>
+    <!--script externo-->
+    <script>
+        let btn = document.querySelector("#btn");
+        let light = document.querySelector(".light")
+        let lampada = document.querySelector('.lamp-container')
+
+        btn.addEventListener("click", () => {
+            if (btn.classList.contains("active")) {
+                btn.classList.remove("active")
+                light.style.opacity = 0
+            } else {
+                btn.classList.add("active")
+                light.style.opacity = 1
+            }
+        })
+    </script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
